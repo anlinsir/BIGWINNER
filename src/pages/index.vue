@@ -130,7 +130,7 @@
    		</div>
    		<!-- left -->
 
-   		<div class="  rightPart Warper">
+   		<div class="rightPart Warper">
    			
 			<Header />
 
@@ -787,6 +787,7 @@ export default {
 
 			}
 			>.datalist{
+				margin-bottom: 100px;
 				.line{
 					transition:all 1s;
 				}

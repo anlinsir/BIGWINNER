@@ -61,6 +61,9 @@ export default {
   .backRe{
     background-repeat: no-repeat;
   }
+  .under{
+    text-decoration: underline;
+  }
 
 
   /* 字号 */
