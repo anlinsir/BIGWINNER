@@ -23,7 +23,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/index',
       name: 'Index',
       component: Index
     },
@@ -51,6 +51,7 @@ export default new Router({
       path: '/pip',
       name: 'pip',
       component: Pip
-    }
+    },
+    { path: '*', redirect: "/register"}
   ]
 })

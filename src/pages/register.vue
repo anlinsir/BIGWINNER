@@ -68,6 +68,7 @@
 </template>
 
 <script>
+	import axios from 'axios'
 export default {
   data () {
     return {
@@ -89,6 +90,26 @@ export default {
   mounted(){
   	this.fullHeight = document.documentElement.clientHeight
 	window.onresize = () => this.fullHeight = document.documentElement.clientHeight
+
+	axios.get(`${href}/api/v1/betting/profitDay`)//近24小时获胜
+		.then((r)=>{
+			if(r.data.code == 200){
+				console.log(r)
+			}else{
+
+			}
+		})
+	axios.get(`${href}/api/v1/betting/wagerDay`)//近24小时投注
+		.then((r)=>{
+			if(r.data.code == 200){
+				console.log(r)
+			}else{
+
+			}
+		})
+
+
+
   }
 }
 </script>
